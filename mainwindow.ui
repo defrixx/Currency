@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="btnReq">
+      <property name="text">
+       <string>Send Request</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="edtURL">
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+
+text-decoration: underline;
+
+color: rgb(0, 0, 255);
+
+background-color: 
+qlineargradient(spread:pad,
+x1:0.9, y1:0,
+x2:1, y2:0, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:1 rgba(0, 0, 255, 255));
+</string>
+      </property>
+      <property name="text">
+       <string>https://www.cbr.ru</string>
+      </property>
+      <property name="placeholderText">
+       <string>URL веб-страницы</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QPlainTextEdit" name="edtReply">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/logo.png);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+background-position: center;
+background-repeat: no-repeat;
+
+</string>
+      </property>
+      <property name="plainText">
+       <string>HTTP - Response from web-server
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>Выводится содежимое HTTP-ответа веб-сервера</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="lbExRatio">
+      <property name="styleSheet">
+       <string notr="true">
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Result</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="ValueBox">
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Rubles per Dollar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rubles per Euro</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
